@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.2.2)
+  - CHTCollectionViewWaterfallLayout/Swift (0.9.8)
+  - IQKeyboardManagerSwift (6.5.6)
+  - NVActivityIndicatorView (5.0.1):
+    - NVActivityIndicatorView/Base (= 5.0.1)
+  - NVActivityIndicatorView/Base (5.0.1)
+  - SDWebImage (5.6.0):
+    - SDWebImage/Core (= 5.6.0)
+  - SDWebImage/Core (5.6.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - CHTCollectionViewWaterfallLayout/Swift
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - SDWebImage (~> 5.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CHTCollectionViewWaterfallLayout
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - SDWebImage
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  CHTCollectionViewWaterfallLayout: 5f241d2480ab4939aa0d1ad4981de9eef1fbe60d
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
+  SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 92747e68bb78389974df6d6e056ca95bc85b98de
+
+COCOAPODS: 1.9.0
