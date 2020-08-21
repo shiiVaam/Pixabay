@@ -23,7 +23,6 @@
 		EE2DA08A24ED30DD00BBC489 /* labelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA08924ED30DD00BBC489 /* labelAnimation.swift */; };
 		EE2DA08C24ED36A500BBC489 /* ViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA08B24ED36A500BBC489 /* ViewGradient.swift */; };
 		EE2DA09024ED3A7B00BBC489 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA08F24ED3A7B00BBC489 /* AppColors.swift */; };
-		EE2DA09424ED53EF00BBC489 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA09224ED53EF00BBC489 /* Json4Swift_Base.swift */; };
 		EE2DA09524ED53EF00BBC489 /* Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA09324ED53EF00BBC489 /* Hits.swift */; };
 		EE2DA09824ED559200BBC489 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA09724ED559200BBC489 /* AppStrings.swift */; };
 		EE84A7A624EE9BAE00A9329B /* HomeVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84A7A524EE9BAE00A9329B /* HomeVCExtension.swift */; };
@@ -58,7 +57,6 @@
 		EE2DA08924ED30DD00BBC489 /* labelAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = labelAnimation.swift; sourceTree = "<group>"; };
 		EE2DA08B24ED36A500BBC489 /* ViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGradient.swift; sourceTree = "<group>"; };
 		EE2DA08F24ED3A7B00BBC489 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
-		EE2DA09224ED53EF00BBC489 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
 		EE2DA09324ED53EF00BBC489 /* Hits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hits.swift; sourceTree = "<group>"; };
 		EE2DA09724ED559200BBC489 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		EE84A7A524EE9BAE00A9329B /* HomeVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCExtension.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				EE2DA09324ED53EF00BBC489 /* Hits.swift */,
-				EE2DA09224ED53EF00BBC489 /* Json4Swift_Base.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,9 +153,9 @@
 		EE2DA07124ED1F9800BBC489 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EE2DA07F24ED2F4E00BBC489 /* SplashVC.swift */,
 				EE2DA05C24ED1F5600BBC489 /* HomeVC.swift */,
 				EE84A7A524EE9BAE00A9329B /* HomeVCExtension.swift */,
-				EE2DA07F24ED2F4E00BBC489 /* SplashVC.swift */,
 				EEFF4D4524EE5A9C006A1730 /* PicFullVC.swift */,
 			);
 			path = Controller;
@@ -414,7 +411,6 @@
 				EE2DA09024ED3A7B00BBC489 /* AppColors.swift in Sources */,
 				EEFF4D4624EE5A9C006A1730 /* PicFullVC.swift in Sources */,
 				EE84A7AF24EEB49D00A9329B /* Extensions.swift in Sources */,
-				EE2DA09424ED53EF00BBC489 /* Json4Swift_Base.swift in Sources */,
 				EE2DA05924ED1F5600BBC489 /* AppDelegate.swift in Sources */,
 				EE2DA08724ED306D00BBC489 /* ViewCorners.swift in Sources */,
 				EE2DA05B24ED1F5600BBC489 /* SceneDelegate.swift in Sources */,
@@ -567,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZ35CTMT62;
-				INFOPLIST_FILE = "/Users/shivamsharma/Desktop/Pixaby/Pixabay/AppDelegate & infoPlist/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Pixabay/AppDelegate & infoPlist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZ35CTMT62;
-				INFOPLIST_FILE = "/Users/shivamsharma/Desktop/Pixaby/Pixabay/AppDelegate & infoPlist/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Pixabay/AppDelegate & infoPlist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

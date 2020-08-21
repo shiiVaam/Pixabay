@@ -12,14 +12,27 @@ import UIKit
 extension HomeVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arraySearchSuggestions.count
+        if searchActive == true {
+            return (searchedSuggestions.count != 0) ? (searchedSuggestions.count) : (0)
+        } else {
+            return (arraySearchSuggestions.count != 0) ? (arraySearchSuggestions.count) : (0)
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-        cell.textLabel?.text = arraySearchSuggestions[indexPath.row].searchValue
+
+        if searchActive == true {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+            cell.textLabel?.text = searchedSuggestions[indexPath.row].searchValue
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+            cell.textLabel?.text = arraySearchSuggestions[indexPath.row].searchValue
+            return cell
+        }
         
-        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -27,8 +40,14 @@ extension HomeVC:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        callApi(with: arraySearchSuggestions[indexPath.row].searchValue, pageNumber: 1)
+        
+        if searchActive == true {
+            callApi(with: searchedSuggestions[indexPath.row].searchValue, pageNumber: 1)
+            txtFieldSearch.text = searchedSuggestions[indexPath.row].searchValue
+        } else {
+            callApi(with: arraySearchSuggestions[indexPath.row].searchValue, pageNumber: 1)
+            txtFieldSearch.text = arraySearchSuggestions[indexPath.row].searchValue
+        }
         tblViewSearch.isHidden = true
-        txtFieldSearch.text = arraySearchSuggestions[indexPath.row].searchValue
     }
 }

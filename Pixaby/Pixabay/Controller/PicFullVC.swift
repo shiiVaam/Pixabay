@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 
 class PicFullVC: UIViewController {
-    
+
     @IBOutlet weak var colViewFullPic: UICollectionView!{
         didSet{
             colViewFullPic.register(UINib(nibName: "ImageCVC", bundle: nil), forCellWithReuseIdentifier: "ImageCVC")
@@ -38,6 +38,7 @@ class PicFullVC: UIViewController {
     }
 
 }
+//    MARK:- CollectionView Delegate and Datasource
 
 extension PicFullVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
